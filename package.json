@@ -1,11 +1,11 @@
 {
-  "name": "bz-route-test",
+  "name": "bz-retracer-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha ./test/**/*.js"
+    "test": "set NODE_ENV=test& mocha ./test/**/*.js"
   },
   "keywords": [],
   "author": "",

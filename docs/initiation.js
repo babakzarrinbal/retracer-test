@@ -17,9 +17,9 @@ module.exports= {
     },
     servers: [
       {
-        url: "http://localhost:3000/boarding/sort",
+        url: "http://localhost:3000/api/categories",
       },
     ],
   },
-  apis: ["./routes/boarding.js"],
+  apis: ["./routes/categories.js"],
 };

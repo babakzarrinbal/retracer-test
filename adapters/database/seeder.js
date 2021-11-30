@@ -1,3 +1,8 @@
+const fs = require('fs');
+if(!fs.existsSync(__dirname + '/database.sqlite')){
+  fs.closeSync(fs.openSync(__dirname + '/database.sqlite', 'w'))
+  require('./seeder');
+}
 const { DB } = require("./dbconnection.js");
 const logger = require("../logging");
 
